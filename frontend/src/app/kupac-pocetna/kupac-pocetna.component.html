@@ -1,0 +1,35 @@
+{{ulogovan.first_name}} {{ulogovan.last_name}} <button (click)="odjava()">Odjava</button>
+<br>
+<table >
+    <tr>
+        <th>Id</th>
+        <th>Size</th>
+        <th>Extras</th>
+        <th>Status</th>
+    </tr>
+    <tr *ngFor="let n of narudzbine">
+        <td>{{n['id']}}</td>
+        <td>{{n['size']}}</td>
+        <td>
+            <ul>
+                <li *ngFor="let extra of n['extras']">{{extra}}</li>
+            </ul>
+        </td>
+        <td>{{n['status']}}</td>
+    </tr>
+</table>
+Naručivanje <br/>
+<span style="color: red">{{greska}}</span>
+<br *ngIf="greska"/>
+Velicina<select [(ngModel)]="velicina" name="velicina">
+    <option value="mala">Mala</option>
+    <option value="srednja">Srednja</option>
+    <option value="velika">Velika</option>
+</select>
+<br/>
+Dodaci
+<br/>
+<span *ngFor="let d of dodaci" name="postavljeni_dodaci" >
+<input type="checkbox" id="{{d.name}}" value="{{d.id}}" [disabled]="!(d.amount>0)" (change)="azuriraj(d.name, $event)" /> {{d.name}} [{{d.amount}}]
+</span>
+<button (click)="naruci()">Poruci</button>

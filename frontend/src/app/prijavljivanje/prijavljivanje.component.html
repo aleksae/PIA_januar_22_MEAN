@@ -1,0 +1,9 @@
+<h1>Prijavljivanje</h1>
+K. ime: <input type="text" [(ngModel)]="username"/><br>
+Lozinka: <input type="password" [(ngModel)]="password"/><br>
+Uloga u sistemu:
+<input type="radio" name="uloga" [(ngModel)]="type" value="kupac"/>Kupac
+<input type="radio" name="uloga" [(ngModel)]="type" value="radnik"/>Radnik
+<br>
+<div *ngIf="greska" style="color: red">{{greska}}</div>
+<button (click)="prijava()">Prijava</button>

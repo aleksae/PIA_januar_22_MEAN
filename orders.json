@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "user" : "ana",
+        "size" : "mala",
+        "status" : "nova",
+        "extras" : [
+            "pelat", "sir", "kulen"
+        ]
+    },
+    {
+        "id" : 2,
+        "user" : "paja",
+        "size" : "srednja",
+        "status" : "prihvacena",
+        "extras" : [
+            "pelat", "sir", "sunka"
+        ]
+    },
+    {
+        "id" : 3,
+        "user" : "paja",
+        "size" : "velika",
+        "status" : "nova",
+        "extras" : [
+            "pelat", "sir", "sunka", "kulen", "zelene masline"
+        ]
+    },
+    {
+        "id" : 4,
+        "user" : "ana",
+        "size" : "srednja",
+        "status" : "odbijena",
+        "extras" : [
+            "sir", "ananas"
+        ]
+    }
+]

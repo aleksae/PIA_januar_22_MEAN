@@ -1,0 +1,30 @@
+[
+    {
+        "username": "pera",
+        "password" : "pera123",
+        "first_name" : "Petar",
+        "last_name" : "Peric",
+        "type": "radnik"
+    },
+    {
+        "username": "maja",
+        "password" : "maja123",
+        "first_name" : "Marija",
+        "last_name" : "Maric",
+        "type": "radnik"
+    },
+    {
+        "username": "ana",
+        "password" : "ana123",
+        "first_name" : "Ana",
+        "last_name" : "Andjelkovic",
+        "type": "kupac"
+    },
+    {
+        "username": "paja",
+        "password" : "paja123",
+        "first_name" : "Pavle",
+        "last_name" : "Pajic",
+        "type": "kupac"
+    }
+]
